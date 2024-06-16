@@ -20,19 +20,9 @@ pipeline{
 				echo "BUILD URL  - $env.BUILD_URL"
 			}
 		}
-		stage('Compile'){
+		stage('Build-Jar'){
 			steps{
-				sh 'mvn clean compile'
-			}
-		}
-		stage('Test'){
-			steps{
-				echo 'mvn test'
-			}
-		}
-		stage('Integration Test'){
-			steps{
-				echo 'mvn failsafe:integration-test failsafe:verify'
+				sh 'mvn clean package -DskipTests'
 			}
 		}
 	}
