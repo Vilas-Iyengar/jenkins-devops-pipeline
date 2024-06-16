@@ -19,7 +19,7 @@ pipeline{
 				echo "BUILD TAG  - $env.BUILD_TAG"
 				echo "BUILD URL  - $env.BUILD_URL"
 			}
-		}4
+		}
 		stage('Compile'){
 			sh 'mvn clean compile'
 		}
