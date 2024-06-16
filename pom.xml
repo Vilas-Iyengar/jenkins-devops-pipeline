@@ -6,7 +6,7 @@
 
 	<groupId>com.in28minutes.microservices</groupId>
 	<artifactId>currency-exchange-basic</artifactId>
-	<version>0.0.1-RELEASE</version> 
+	<version>0.0.1-RELEASE</version> <!-- CHANGE -->
 	<packaging>jar</packaging>
 	<name>currency-exchange</name>
 
@@ -191,7 +191,7 @@
 					<!--<argLine>${jacoco.itAgentConfig}</argLine> -->
 					<includes>
 						<!--<include>**/*ApplicationTests.java</include> -->
-						<include>**/*CucumberIntegrationTestCase.java</include>
+						<include>**/*IntegrationTestCase.java</include>
 					</includes>
 				</configuration>
 			</plugin>
